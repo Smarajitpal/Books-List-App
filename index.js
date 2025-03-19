@@ -5,7 +5,7 @@ const app = express();
 const { initializeDatabase } = require("./db/db.connection");
 const { Books } = require("./models/books.model");
 
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 initializeDatabase();
