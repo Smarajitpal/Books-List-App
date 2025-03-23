@@ -60,7 +60,7 @@ app.delete("/books/:id", async (req, res) => {
   }
 });
 
-app.put("books/:id", async (req, res) => {
+app.put("/books/:id", async (req, res) => {
   const bookId = req.params.id;
   const updatedBooksData = req.body;
 
